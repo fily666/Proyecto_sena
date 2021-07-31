@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Entregables Proyecto</title>
+	<link rel="stylesheet" href="assets/css/estilos.css" />
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<style>
+		.row.content {
+			height: 1150px;
+		}
+
+		.sidenav {
+			height: 100%;
+		}
+
+		@media screen and (max-width: 767px) {
+			.sidenav {
+				height: auto;
+				padding: 15px;
+			}
+
+			.row.content {
+				height: auto;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row content">
+			<div class="col-sm-3 sidenav">
+				<div class="row" style="background-color: black; color: white; padding: 15px;">
+					<h4>Entregables x Trimestre</h4>
+				</div>
+
+				<a href="../index.html">
+					<button class="btn btn-outline-info">Volver</button>
+				</a>
+				<hr>
+
+				<ul class="list-group">
+					<a href="entregables.html" class=" list-group-item list-group-item-action">
+						<div class="d-flex w-100 justify-content-start align-items-center">
+							<span class="menu-collapsed">HOME</span>
+						</div>
+					</a>
+					<a href="#" class=" list-group-item list-group-item-action">
+						<div class="d-flex w-100 justify-content-start align-items-center">
+							<span class="menu-collapsed">Repositorio</span>
+						</div>
+					</a>
+				</ul>
+				<hr>
+				<ul class="list-group">
+					<a href="#submenu1" data-toggle="collapse" aria-expanded="false" class=" list-group-item  btn "
+						style="background-color: #0dcaf0;">
+						<span class="menu-collapsed">Primer Trimestre ▾</span>
+					</a>
+
+
+					<div id='submenu1' class="collapse sidebar-submenu">
+						<a target="area_trabajo" href="1er_Trim/1_Presentación_Sustentacion.pdf"
+							class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Presentación Proyecto</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Levantamiento de Información</span>
+						</a>
+						<a target="area_trabajo" href="1er_Trim/4_DiagramaProcesos.pdf"
+							class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Diagrama de Procesos</span>
+						</a>
+						<a target="area_trabajo" href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Preeliminar Inventario</span>
+						</a>
+						<a target="area_trabajo" href="1er_Trim/2_Formulación_del_Proyecto.pdf"
+							class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Formulación del Proyecto</span>
+						</a>
+						<a target="area_trabajo" href="1er_Trim/5_Plantilla_IEEE_830.pdf"
+							class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">IEEE-830</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Entregables 1er Trim</span>
+						</a>
+					</div>
+
+					<a href="#submenu2" data-toggle="collapse" aria-expanded="false" class=" list-group-item  btn "
+						style="background-color: #0dcaf0;">
+						<span class="menu-collapsed">Segundo Trimestre ▾</span>
+					</a>
+
+					<div id='submenu2' class="collapse sidebar-submenu">
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Diagrama Casos de Uso</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Casos de Uso Extendido</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Modelo Entidad Relación</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Diccionario de Datos</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Cronograma de Actividades</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Presupuesto y Personal</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Entregables 2do Trim</span>
+						</a>
+					</div>
+					<a href="#submenu3" data-toggle="collapse" aria-expanded="false" class=" list-group-item  btn "
+						style="background-color: #0dcaf0;">
+						<span class="menu-collapsed">Tercero Trimestre ▾</span>
+					</a>
+					<div id='submenu3' class="collapse sidebar-submenu">
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Modelo Relacional</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Diagrama de Clases</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Diagrama de Distribución</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">WireFrame o Mockups</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Entregables 3er Trim</span>
+						</a>
+					</div>
+					<a href="#submenu4" data-toggle="collapse" aria-expanded="false" class=" list-group-item  btn "
+						style="background-color: #0dcaf0;">
+						<span class="menu-collapsed">Cuarto Trimestre ▾</span>
+					</a>
+					<div id='submenu4' class="collapse sidebar-submenu">
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Inventario</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Informe de Costos</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Base de Datos - DDL</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Base de Datos - DML</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Entregables 4to Trim</span>
+						</a>
+					</div>
+					<a href="#submenu5" data-toggle="collapse" aria-expanded="false" class=" list-group-item  btn "
+						style="background-color: #0dcaf0;">
+						<span class="menu-collapsed">Quinto Trimestre ▾</span>
+					</a>
+					<div id='submenu5' class="collapse sidebar-submenu">
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Prototipo No Funcional</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Manual Técnico</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Plan de Pruebas Unitarias</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Plan de Pruebas de Integración</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Plan de Pruebas Funcionales</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Plan de Pruebas de Aceptación</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Local App - S.I.</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Entregables 5to Trim</span>
+						</a>
+					</div>
+					<a href="#submenu6" data-toggle="collapse" aria-expanded="false" class=" list-group-item  btn "
+						style="background-color: #0dcaf0;">
+						<span class="menu-collapsed">Sexto Trimestre ▾</span>
+					</a>
+					<div id='submenu6' class="collapse sidebar-submenu">
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Informe de Distribución</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Cuadro Comparativo Proveedores</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Contratos de Software</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Despliegue App - S.I. 2do</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Entregables 7mo Trim</span>
+						</a>
+					</div>
+					<a href="#submenu7" data-toggle="collapse" aria-expanded="false" class=" list-group-item  btn "
+						style="background-color: #0dcaf0;">
+						<span class="menu-collapsed">Septimo Trimestre ▾</span>
+					</a>
+					<div id='submenu7' class="collapse sidebar-submenu">
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Cronograma de Actividades Final</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Manual de Usuario Final</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Manual de Operación Final</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Modelo de Calidad Software</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Despliegue App - S.I. Final</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Entregables 8vo Trim</span>
+						</a>
+					</div>
+					<a href="#submenu8" data-toggle="collapse" aria-expanded="false" class=" list-group-item  btn "
+						style="background-color: #0dcaf0;">
+						<span class="menu-collapsed">Octavo Trimestre ▾</span>
+					</a>
+					<div id='submenu8' class="collapse sidebar-submenu">
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Cronograma de Actividades Final</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Manual de Usuario Final</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Manual de Operación Final</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Modelo de Calidad Software</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Despliegue App - S.I. Final</span>
+						</a>
+						<a href="#" class=" list-group-item  btn-outline-secondary">
+							<span class="menu-collapsed">Entregables 8vo Trim</span>
+						</a>
+					</div>
+				</ul>
+
+			</div>
+
+			<div class="col-sm-9">
+				<iframe name="area_trabajo" src="Entregables_Proyecto_Formativo_FDS.pdf" width="100%"
+					height="100%"></iframe>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

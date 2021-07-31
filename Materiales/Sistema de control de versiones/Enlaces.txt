@@ -1,5 +1,0 @@
-Manuales git
-
-https://help.github.com/es/desktop/getting-started-with-github-desktop/creating-your-first-repository-using-github-desktop
-
-https://conociendogithub.readthedocs.io/en/latest/data/dinamica-de-uso/
