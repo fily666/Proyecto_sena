@@ -1,0 +1,183 @@
+package ejerciciopruebas;
+import java.io.File;
+
+import org.junit.Test;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Test_prueba1 {
+
+    WebDriver chromeDrive;
+    By resgisterBtnLocator =By.name("register");
+    By LoginBtnLocator =By.name("Login");
+    By UsuarioBtnLocator =By.name("usuario");
+    By resgistroUsuBtnLocator =By.name("registro_usuario");
+    By verusuBtnLocator =By.name("ver_usuario");
+    By editusuBtnLocator =By.name("edit_usuario");
+    By  actualizar_usuBtnLocator =By.name("btn_actualizar");
+    By  deleteusuBtnLocator =By.name("delete_usuario");
+    By EventoBtnLocator =By.name("eventos");
+    By CrearEventBtnLocator =By.name("crear_evento");
+    By VerEventoBtnLocator =By.name("ver_evento");
+    By editeventBtnLocator =By.name("edit_evento");
+    By ActualizarEventoBtnLocator =By.name("update");
+ //   By DeleteEventoBtnLocator =By.name("delete_evento");
+
+
+    
+    
+    @Test
+    
+    public void Prueba1(){
+        System.setProperty("webdriver.chrome.driver","C:\\webdriver/chromedriver.exe");
+        chromeDrive = new ChromeDriver();
+		chromeDrive.manage().window().maximize();
+        
+        chromeDrive.get("http://localhost/AgendingSystem-/");
+        System.out.println(chromeDrive.getTitle());
+        
+        //Pagina_Principal
+        
+        chromeDrive.get("http://localhost/AgendingSystem-/public/");
+        System.out.println(chromeDrive.getTitle());
+        
+        
+        
+        //Registrar_usuario
+        
+        
+        chromeDrive.get("http://localhost/AgendingSystem-/public/register");
+        System.out.println(chromeDrive.getTitle());
+        
+        chromeDrive.findElement(By.xpath("//input[@name='name']")).sendKeys("karen");
+        chromeDrive.findElement(By.xpath("//input[@name='email']")).sendKeys("karen1@gmail.com");
+        chromeDrive.findElement(By.xpath("//input[@name='password']")).sendKeys("123456789");
+        chromeDrive.findElement(By.xpath("//input[@name='password_confirmation']")).sendKeys("123456789");
+
+        chromeDrive.findElement(resgisterBtnLocator).click();
+        
+        
+        //Ingresar_Login
+        
+        
+        
+        chromeDrive.get("http://localhost/AgendingSystem-/public/login");
+        System.out.println(chromeDrive.getTitle());
+        
+        chromeDrive.findElement(By.xpath("//input[@name='email']")).sendKeys("karen1@gmail.com");
+        chromeDrive.findElement(By.xpath("//input[@name='password']")).sendKeys("123456789");
+        
+        chromeDrive.findElement(LoginBtnLocator).click();
+        
+        
+        //Ingresar_Usuario
+        
+        chromeDrive.get("http://localhost/AgendingSystem-/public/usuarios");
+        chromeDrive.findElement(UsuarioBtnLocator).click();
+        
+        
+        
+        chromeDrive.findElement(By.xpath("//input[@name='name']")).sendKeys("Juandavid");
+        chromeDrive.findElement(By.xpath("//input[@name='email']")).sendKeys("juandavid@gmail.com");
+        chromeDrive.findElement(By.xpath("//input[@name='password']")).sendKeys("123456789");
+        chromeDrive.findElement(By.xpath("//input[@name='password_confirmation']")).sendKeys("123456789");
+
+        chromeDrive.findElement(resgistroUsuBtnLocator).click();
+        
+        
+        
+        //Consultar_Usuario
+  
+      
+       chromeDrive.get("http://localhost/AgendingSystem-/public/usuarios");
+        chromeDrive.findElement(verusuBtnLocator).click(); 
+        
+        
+        
+        //Editar_Usuario
+        
+        chromeDrive.get("http://localhost/AgendingSystem-/public/usuarios");
+        chromeDrive.findElement(editusuBtnLocator).click();
+        
+        
+        chromeDrive.findElement(By.xpath("//input[@name='name']")).sendKeys(" B2");
+        chromeDrive.findElement(By.xpath("//input[@name='confirmation_pass']")).sendKeys("123456789");
+
+        
+        
+        chromeDrive.findElement(actualizar_usuBtnLocator).click();
+        
+        
+        
+      //Eliminar_Usuario
+        
+        
+        chromeDrive.get("http://localhost/AgendingSystem-/public/usuarios");
+        chromeDrive.findElement(deleteusuBtnLocator).click();
+        
+        
+        
+        
+        //Ingresar_Eventos
+        
+       chromeDrive.get("http://localhost/AgendingSystem-/public/eventos");
+       chromeDrive.findElement(EventoBtnLocator).click();
+       
+       
+       
+       //Crear_Evento
+       
+       chromeDrive.findElement(By.xpath("//input[@name='name']")).sendKeys("Peluqueria Karen");
+     
+       File file = new File("C:\\Users\\Usuario\\Pictures\\dibujo.png");
+       String path = file.getAbsolutePath();
+       chromeDrive.findElement(By.xpath("//input[@name='logo']")).sendKeys(path);
+       
+       chromeDrive.findElement(By.xpath("//input[@name='fechainicial']")).sendKeys("03/07/2021");
+       chromeDrive.findElement(By.xpath("//input[@name='fechafinal']")).sendKeys("12/07/2021");
+       chromeDrive.findElement(By.xpath("//input[@name='horainicial']")).sendKeys("09:00a.m.");
+       chromeDrive.findElement(By.xpath("//input[@name='horafinal']")).sendKeys("12:00p.m.");
+       chromeDrive.findElement(By.xpath("//input[@name='duracion']")).sendKeys("90");
+       chromeDrive.findElement(By.xpath("//input[@name='detalle']")).sendKeys("Manicure y pedicure");
+       
+       chromeDrive.findElement(CrearEventBtnLocator).click();
+       
+       
+       
+       
+       //Ver_Evento
+       
+       chromeDrive.get("http://localhost/AgendingSystem-/public/eventos");
+       chromeDrive.findElement(VerEventoBtnLocator).click();
+       
+      
+       
+       
+       //Actualizar_Evento
+       
+       chromeDrive.get("http://localhost/AgendingSystem-/public/eventos");
+       chromeDrive.findElement(editeventBtnLocator).click();
+       
+       chromeDrive.findElement(By.xpath("//input[@name='name']")).sendKeys(" V2");
+       
+       File file1 = new File("C:\\Users\\Usuario\\Pictures\\dibujo.png");
+       String path1 = file1.getAbsolutePath();
+       chromeDrive.findElement(By.xpath("//input[@name='logo']")).sendKeys(path1);
+       
+       chromeDrive.findElement(ActualizarEventoBtnLocator).click();
+       
+       
+       
+       //Eliminar_Evento
+       
+       
+       //	chromeDrive.get("http://localhost/AgendingSystem-/public/eventos");
+     //	chromeDrive.findElement(DeleteEventoBtnLocator).click();
+       
+      
+       
+     }
+};
